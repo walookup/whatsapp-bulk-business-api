@@ -42,17 +42,17 @@
     {
       "name": "number",
       "example": "17253100591",
-      "description": ""
+      "description": "The submitted number, exactly as it appeared in your file."
     },
     {
       "name": "whatsapp",
       "example": "yes",
-      "description": ""
+      "description": "Whether the number is registered on WhatsApp."
     },
     {
       "name": "business",
       "example": "yes",
-      "description": ""
+      "description": "Whether the account is a WhatsApp Business account."
     }
   ],
   "statuses": [

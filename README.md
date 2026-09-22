@@ -21,9 +21,9 @@ This is the official WA Lookup example repository for **one** bulk product, `ws_
 
 | Column | Example | Meaning |
 |---|---|---|
-| `number` | `17253100591` |  |
-| `whatsapp` | `yes` |  |
-| `business` | `yes` |  |
+| `number` | `17253100591` | The submitted number, exactly as it appeared in your file. |
+| `whatsapp` | `yes` | Whether the number is registered on WhatsApp. |
+| `business` | `yes` | Whether the account is a WhatsApp Business account. |
 
 The result is a **point-in-time signal**, not a verdict, and not identity data. It describes what the provider reported at the moment the task ran.
 
