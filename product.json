@@ -1,5 +1,5 @@
 {
-  "name": "WhatsApp Bulk Business Check",
+  "name": "WhatsApp bulk business check",
   "brand": "WA Lookup",
   "repository": "walookup/whatsapp-bulk-business-api",
   "description": "Check a whole list for WhatsApp Business accounts — separate from the activity check, this one answers only whether each number runs a Business account.",
@@ -31,7 +31,7 @@
   },
   "limits": {
     "min_items": 1000,
-    "max_items": 100000,
+    "max_items": 500000,
     "poll_interval_seconds": 30,
     "file_formats": [
       "txt",
@@ -40,19 +40,19 @@
   },
   "result_fields": [
     {
-      "name": "number",
-      "example": "17253100591",
-      "description": "The submitted number, exactly as it appeared in your file."
+      "name": "identifier",
+      "example": "12345678900",
+      "description": "Submitted identifier, used to join the result to the input. Phone identifiers include their country code."
     },
     {
-      "name": "whatsapp",
-      "example": "yes",
-      "description": "Whether the number is registered on WhatsApp."
+      "name": "activated",
+      "example": "true",
+      "description": "The determined positive/negative signal for this product; interpret it in the product context."
     },
     {
       "name": "business",
-      "example": "yes",
-      "description": "Whether the account is a WhatsApp Business account."
+      "example": "false",
+      "description": "WhatsApp Business-account status when determined."
     }
   ],
   "statuses": [
@@ -63,5 +63,5 @@
   "pricing_url": "https://walookup.com/pricing",
   "maintainer": "WA Lookup",
   "license": "MIT",
-  "last_reviewed": "2026-09-22"
+  "last_reviewed": "2026-10-30"
 }
